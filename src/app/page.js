@@ -1,11 +1,12 @@
 import Banner from "@/components/Banner";
-import { Button } from "@heroui/react";
+import FeaturedAnimals from "@/components/FeaturedAnimals";
 
 
 export default function Home() {
   return (
     <div>
       <Banner />
+      <FeaturedAnimals />
     </div>
   );
 }
