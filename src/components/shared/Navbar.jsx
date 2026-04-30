@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link"
 import { useState } from "react";
 import { FaCow } from "react-icons/fa6"
@@ -15,7 +16,15 @@ const Navbar = () => {
 
         
         <Link href="/" className="flex justify-between p-4">
-          <h1 className="flex justify-center items-center gap-2 text-xl font-bold text-green-600"><FaCow /> <span className="hidden md:flex">QurbaniHat</span></h1>
+          <h1 className="flex justify-center items-center gap-2 text-xl font-bold text-green-600">
+            <Image
+            src={"/logo.png"}
+            alt="logo"
+            loading="eager"
+            width={30}
+            height={30}
+            className="object-cover h-auto w-auto"
+          /> <span className="hidden md:flex">QurbaniHat</span></h1>
 
           <button onClick={() => setOpen(!open)} className="m-2 md:hidden">
           <IoMenu />
