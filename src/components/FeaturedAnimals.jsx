@@ -1,3 +1,5 @@
+import AnimalCard from "./AnimalCard";
+
 
 const FeaturedAnimals = async () => {
 
@@ -16,9 +18,7 @@ const FeaturedAnimals = async () => {
         <div>
             {
             topAnimals.map(
-                topAnimal => <div key={topAnimal.id}>
-                    {topAnimal.image}
-                </div>
+                topAnimal => <AnimalCard key={topAnimal.id} topAnimal={topAnimal} />
             )
         }
         </div>
