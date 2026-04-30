@@ -3,11 +3,26 @@ const FeaturedAnimals = async () => {
 
     const res = await fetch("https://qurbani-hat-delta.vercel.app/data.json");
     const animals = await res.json();
-    console.log(animals);
+    
+    const topAnimals = animals.slice(0, 4);
+
+    console.log(topAnimals);
+    
     
 
   return (
-    <div>FeaturedAnimals</div>
+    <div>
+        <h1>Top Animals</h1>
+        <div>
+            {
+            topAnimals.map(
+                topAnimal => <div key={topAnimal.id}>
+                    {topAnimal.image}
+                </div>
+            )
+        }
+        </div>
+    </div>
   )
 }
 

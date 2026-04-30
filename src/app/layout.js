@@ -26,7 +26,9 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
-        {children}
+        <main className="w-7xl mx-auto mt-5">
+          {children}
+        </main>
       </body>
     </html>
   );
