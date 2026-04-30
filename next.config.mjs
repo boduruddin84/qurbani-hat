@@ -6,7 +6,12 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "**",
-        port: "",
+        port: "/**",
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.pinterest.com',
+        pathname: '/**',
       },
     ],
   },
