@@ -1,4 +1,5 @@
 import AnimalDetails from "@/components/AnimalDetails";
+import BookingForm from "@/components/BookingForm";
 
 
 const AnimalDetailsPage = async ({ params }) => {
@@ -13,6 +14,7 @@ const AnimalDetailsPage = async ({ params }) => {
     <div>
         <h1 className="my-10 ml-5 text-3xl font-bold">Animals Details</h1>
         <AnimalDetails animal={animal} />
+        <BookingForm />
     </div>
   )
 }
