@@ -16,7 +16,7 @@ const FeaturedAnimals = async () => {
         <div className="ml-5 md:ml-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {
             topAnimals.map(
-                topAnimal => <AnimalCard key={topAnimal.id} topAnimal={topAnimal} />
+                animal => <AnimalCard key={animal.id} animal={animal} />
             )
         }
         </div>
