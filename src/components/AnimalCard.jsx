@@ -1,3 +1,4 @@
+import 'animate.css';
 import { Button, Card } from "@heroui/react"
 import Image from "next/image"
 import Link from "next/link"
@@ -26,7 +27,7 @@ const AnimalCard = ({ animal }) => {
         <p className="font-semibold text-[#121212bc]">{animal.category}</p>
         <p className="flex justify-center items-center gap-1 font-medium text-[#121212e1]"><MdLocationPin />{animal.location}</p>
       </div>
-      <Link href="/animals"><Button variant="outline" className={'w-full font-semibold'} >View Details</Button></Link>
+      <Link href={`/animals/${animal.id}`}><Button variant="outline" className={'w-full font-semibold animate__animated animate__bounce'} >View Details</Button></Link>
     </Card>
   )
 }
