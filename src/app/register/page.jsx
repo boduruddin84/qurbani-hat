@@ -13,9 +13,9 @@ import {
   toast,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
+import { GrGoogle } from "react-icons/gr";
 
 export default function SignUpPage() {
-
   const router = useRouter();
 
   const onSubmit = async (e) => {
@@ -33,14 +33,18 @@ export default function SignUpPage() {
       image,
     });
 
-    if(!error) {
-      router.push('/login')
+    if (!error) {
+      router.push("/login");
+    } else {
+      toast.danger("Something went wrong");
+      alert("Something went wrong");
     }
-    else {
-      toast.danger("Something went wrong")
-      alert("Something went wrong")
-    }
-    
+  };
+
+  const handleGoogleLogIn = async () => {
+    await authClient.signIn.social({
+      provider: "google",
+    });
   };
 
   return (
@@ -114,6 +118,14 @@ export default function SignUpPage() {
           </Button>
         </div>
       </Form>
+      <p className="text-center text-2xl font-semibold">Or</p>
+      <Button
+        onClick={handleGoogleLogIn}
+        variant="outline"
+        className={"w-full font-semibold"}
+      >
+        <GrGoogle /> Login With Google
+      </Button>
     </Card>
   );
 }
