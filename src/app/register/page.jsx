@@ -10,9 +10,14 @@ import {
   Input,
   Label,
   TextField,
+  toast,
 } from "@heroui/react";
+import { useRouter } from "next/navigation";
 
 export default function SignUpPage() {
+
+  const router = useRouter();
+
   const onSubmit = async (e) => {
     e.preventDefault();
 
@@ -28,6 +33,13 @@ export default function SignUpPage() {
       image,
     });
 
+    if(!error) {
+      router.push('/login')
+    }
+    else {
+      toast.danger("Something went wrong")
+      alert("Something went wrong")
+    }
     
   };
 

@@ -10,24 +10,26 @@ import {
   Input,
   Label,
   TextField,
+  toast,
 } from "@heroui/react";
 
 export default function LogInPage() {
   const onSubmit = async (e) => {
     e.preventDefault();
 
-
     const email = e.target.email.value;
     const password = e.target.password.value;
 
     const { data, error } = await authClient.signIn.email({
-      
       email,
       password,
-      callbackURL: "/"
+      callbackURL: "/",
     });
 
-    
+    if (error) {
+      toast.danger("Email or Password went wrong");
+      alert("Email or Password went wrong");
+    }
   };
 
   return (
@@ -35,8 +37,6 @@ export default function LogInPage() {
       <h1 className="text-center text-2xl font-bold">Login</h1>
 
       <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
-
-
         <TextField
           isRequired
           name="email"
@@ -83,7 +83,6 @@ export default function LogInPage() {
 
         <div className="flex gap-2">
           <Button className={"w-full"} type="submit">
-            
             Login
           </Button>
         </div>
