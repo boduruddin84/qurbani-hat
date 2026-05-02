@@ -28,7 +28,6 @@ export default function SignUpPage() {
       image,
     });
 
-    console.log({data, error});
     
   };
 
@@ -62,7 +61,7 @@ export default function SignUpPage() {
           }}
         >
           <Label>Email</Label>
-          <Input placeholder="john@example.com" />
+          <Input placeholder="Enter your email" />
           <FieldError />
         </TextField>
 
