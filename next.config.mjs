@@ -13,11 +13,6 @@ const nextConfig = {
         hostname: 'i.ibb.co.com',
         pathname: '/**',
       },
-      {
-        protocol: 'https',
-        hostname: 'www.pinterest.com',
-        pathname: '/**',
-      },
     ],
   },
 };

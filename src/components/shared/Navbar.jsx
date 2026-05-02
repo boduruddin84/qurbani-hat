@@ -2,7 +2,6 @@
 import Image from "next/image";
 import Link from "next/link"
 import { useState } from "react";
-import { FaCow } from "react-icons/fa6"
 import { IoMenu } from "react-icons/io5";
 
 
