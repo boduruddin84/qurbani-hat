@@ -66,11 +66,11 @@ const Navbar = () => {
               </div>
             ) : (
               <div className="flex gap-2">
-                <Link href="/login" className="btn btn-sm">
-                  Login
+                <Link href="/login" >
+                  <Button className="btn btn-sm">Login</Button>
                 </Link>
-                <Link href="/register" className="btn btn-sm btn-success">
-                  Register
+                <Link href="/register" >
+                  <Button className="btn btn-sm btn-success">Register</Button>
                 </Link>
               </div>
             )}

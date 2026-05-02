@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { FaWeightScale } from "react-icons/fa6";
 import { MdLocationPin } from "react-icons/md";
 import { PiCurrencyDollarBold } from "react-icons/pi";
 
