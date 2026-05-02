@@ -12,6 +12,7 @@ import {
   TextField,
   toast,
 } from "@heroui/react";
+import { GrGoogle } from "react-icons/gr";
 
 export default function LogInPage() {
   const onSubmit = async (e) => {
@@ -31,6 +32,12 @@ export default function LogInPage() {
       alert("Email or Password went wrong");
     }
   };
+
+  const handleGoogleLogIn = async () => {
+    await authClient.signIn.social({
+    provider: "google",
+    })
+  }
 
   return (
     <Card className="border mx-auto w-125 py-10 mt-5">
@@ -87,6 +94,8 @@ export default function LogInPage() {
           </Button>
         </div>
       </Form>
+      <p className="text-center text-2xl font-semibold">Or</p>
+      <Button onClick={handleGoogleLogIn} variant="outline" className={"w-full font-semibold"}><GrGoogle /> Login With Google</Button>
     </Card>
   );
 }
