@@ -29,7 +29,7 @@ const Navbar = () => {
                 width={30}
                 height={30}
                 className="object-cover h-auto w-auto"
-              />{" "}
+              />
               <span className="hidden md:flex">QurbaniHat</span>
             </h1>
 
