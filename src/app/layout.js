@@ -1,20 +1,15 @@
 import dns from "node:dns";
 dns.setServers(['8.8.8.8','8.8.4.4']);
 
-import { Geist, Geist_Mono } from "next/font/google";
+import { Outfit } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const OutfitFont = Outfit({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -26,11 +21,11 @@ export default function RootLayout({ children }) {
     <html
       lang="en"
       data-theme="light"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${OutfitFont.variable} ${OutfitFont.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />
-        <main className="max-w-7xl mx-auto mt-5" suppressHydrationWarning={true}>
+        <main className="max-w-7xl mx-auto mt-5" >
           {children}
         </main>
         <Footer />

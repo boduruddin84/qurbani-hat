@@ -39,8 +39,8 @@ const Navbar = () => {
           </Link>
 
           <div className="hidden md:flex gap-6">
-            <Link href="/">Home</Link>
-            <Link href="/animals">All Animals</Link>
+            <Link href="/" className="font-semibold">Home</Link>
+            <Link href="/animals" className="font-semibold">All Animals</Link>
           </div>
 
           {open && (
