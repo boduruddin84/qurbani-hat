@@ -7,7 +7,7 @@ import BookingForm from "@/components/BookingForm";
 const AnimalDetailsPage = async ({ params }) => {
 
     const {id} = await params;
-    const res = await fetch("https://qurbani-hat-delta.vercel.app/data.json");
+    const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/animals`);
     const animals = await res.json();
     const animal = animals.find(a => a.id == id)
     
