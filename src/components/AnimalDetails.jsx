@@ -4,7 +4,7 @@ import { PiCurrencyDollarBold } from "react-icons/pi";
 
 const AnimalDetails = ({ animal }) => {
   return (
-    <div className="space-y-3 mb-20">
+    <div className="space-y-3 mb-20 w-80 md:w-96 mx-auto">
       <div className="relative w-full aspect-square">
         <Image
           src={animal.image}
