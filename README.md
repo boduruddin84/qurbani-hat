@@ -32,7 +32,7 @@ QurbaniHat is a modern livestock marketplace where users can explore animals (co
 - React.js
 - Tailwind CSS
 - HeroUI
-- Firebase Authentication
+- Better-Auth Authentication
 - React Toastify
 - Animate.css
 
