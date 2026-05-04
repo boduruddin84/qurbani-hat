@@ -52,7 +52,7 @@ export default function SignUpPage() {
     <Card className="border w-80 md:w-96 mx-auto py-10 mt-5">
       <h1 className="text-center text-2xl font-bold">Sign Up</h1>
 
-      <Form className="flex w-96 mx-auto flex-col gap-4" onSubmit={onSubmit}>
+      <Form className="flex w-70 md:w-80 mx-auto flex-col gap-4" onSubmit={onSubmit}>
         <TextField isRequired name="name" type="text">
           <Label>Name</Label>
           <Input placeholder="Enter your name" />
