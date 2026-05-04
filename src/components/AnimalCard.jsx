@@ -8,7 +8,7 @@ import { PiCurrencyDollarBold } from "react-icons/pi"
 
 const AnimalCard = ({ animal }) => {
   return (
-    <Card className="w-96 shadow-xl border rounded-xl">
+    <Card className="w-80 shadow-xl border rounded-xl">
       <div className="relative w-full aspect-square">
         <Image 
         src={animal.image}
