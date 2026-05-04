@@ -1,7 +1,7 @@
 # 🐄 QurbaniHat – Livestock Booking Platform
 
 ## 🌐 Live Site
-https://qurbani-hat-delta.vercel.app
+https://qurbani-hat-iaw9.vercel.app/
 
 ---
 
