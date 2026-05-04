@@ -9,6 +9,13 @@ const client = new MongoClient(process.env.MONGODB_URI);
 const db = client.db("qurbani-hat");
 
 export const auth = betterAuth({
+  trustedOrigins: [
+        "http://localhost:3000",
+        "https://qurbani-hat-iaw9.vercel.app"
+    ],
+    advanced: {
+        useSecureCookies: process.env.NODE_ENV === "production"
+    },
   database: mongodbAdapter(db, {
     client
   }),
