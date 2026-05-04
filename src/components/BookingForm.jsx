@@ -15,8 +15,8 @@ import { toast } from "react-toastify";
 const BookingForm = () => {
   const onSubmit = (e) => {
     e.preventDefault();
-
-    toast.success("Form submitted");
+    e.target.reset();
+    toast.success("Booking Successful");
   };
   return (
     <div>
@@ -63,7 +63,7 @@ const BookingForm = () => {
 
         <Button className="w-full" type="submit">
           <Check />
-          Submit
+          Confirm Booking
         </Button>
       </Form>
     </div>

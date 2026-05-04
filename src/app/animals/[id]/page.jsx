@@ -2,6 +2,8 @@ import AnimalDetails from "@/components/AnimalDetails";
 import BookingForm from "@/components/BookingForm";
 
 
+
+
 const AnimalDetailsPage = async ({ params }) => {
 
     const {id} = await params;
