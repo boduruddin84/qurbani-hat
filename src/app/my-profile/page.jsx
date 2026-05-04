@@ -8,7 +8,7 @@ const ProfilePage = () => {
   const user = userData.data?.user;
 
   return (
-    <Card className="flex flex-col items-center border w-96">
+    <Card className="flex flex-col items-center border w-80">
       <Avatar className="h-20 w-20">
         <Avatar.Image
           alt={user?.name}
