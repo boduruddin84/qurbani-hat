@@ -1,0 +1,108 @@
+{
+    "data": [
+  {
+    "id": 1,
+    "name": "Deshi Shahi Cow",
+    "type": "Cow",
+    "breed": "Local Deshi",
+    "price": 120000,
+    "weight": 280,
+    "age": 3,
+    "location": "Bogura",
+    "description": "Healthy deshi cow suitable for Qurbani. Well fed with natural খাবার.",
+    "image": "https://i.ibb.co.com/zVRbXB8d/10f2c6ea8dd3484242d9156b08b2e7df.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 2,
+    "name": "Australian Friesian Cow",
+    "type": "Cow",
+    "breed": "Friesian",
+    "price": 180000,
+    "weight": 350,
+    "age": 4,
+    "location": "Sirajganj",
+    "description": "High-quality imported breed with excellent স্বাস্থ্য.",
+    "image": "https://i.ibb.co.com/1GtzKDVS/95c5643f1ed289b0a437751f8c4df3ad.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 3,
+    "name": "Sahiwal Premium Cow",
+    "type": "Cow",
+    "breed": "Sahiwal",
+    "price": 150000,
+    "weight": 320,
+    "age": 3,
+    "location": "Rajshahi",
+    "description": "Strong শরীরের গঠন এবং ভালো মাংসের জন্য পরিচিত।",
+    "image": "https://i.ibb.co.com/ksKCJStn/a26d34e499a8caedf9b533c43283b990.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 4,
+    "name": "Black Bengal Goat",
+    "type": "Goat",
+    "breed": "Black Bengal",
+    "price": 25000,
+    "weight": 35,
+    "age": 2,
+    "location": "Kushtia",
+    "description": "বাংলাদেশের জনপ্রিয় জাত, মাংস খুব সুস্বাদু।",
+    "image": "https://i.ibb.co.com/pBdMy6Kf/3ca65d6dc2b463092b88c55066057749.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 5,
+    "name": "Jamunapari Goat",
+    "type": "Goat",
+    "breed": "Jamunapari",
+    "price": 40000,
+    "weight": 45,
+    "age": 2,
+    "location": "Pabna",
+    "description": "Large size goat with সুন্দর appearance.",
+    "image": "https://i.ibb.co.com/9mGwc0n6/3140ef6b395277c9c8d6d4caa1bafe58.jpg",
+    "category": "Small Animal"
+  },
+  {
+    "id": 6,
+    "name": "Hybrid White Cow",
+    "type": "Cow",
+    "breed": "Crossbreed",
+    "price": 140000,
+    "weight": 300,
+    "age": 3,
+    "location": "Dhaka",
+    "description": "Healthy hybrid cow with balanced weight.",
+    "image": "https://i.ibb.co.com/wN0xggtR/4f5718fb162392c0adfbc2ef6b1b7cbc.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 7,
+    "name": "Deshi Red Cow",
+    "type": "Cow",
+    "breed": "Red Deshi",
+    "price": 130000,
+    "weight": 290,
+    "age": 3,
+    "location": "Tangail",
+    "description": "Natural feed এ বড় হওয়া শক্তিশালী গরু।",
+    "image": "https://i.ibb.co.com/spg8Rr1M/bc73757460e366ff39949333ac848c61.jpg",
+    "category": "Large Animal"
+  },
+  {
+    "id": 8,
+    "name": "Small Deshi Goat",
+    "type": "Goat",
+    "breed": "Local",
+    "price": 18000,
+    "weight": 28,
+    "age": 1.5,
+    "location": "Mymensingh",
+    "description": "Budget-friendly ছোট ছাগল কুরবানির জন্য।",
+    "image": "https://i.ibb.co.com/VpNRdzKh/986764c6ed6d44b7899a2e04af4c4a15.jpg",
+    "category": "Small Animal"
+  }
+]
+}
