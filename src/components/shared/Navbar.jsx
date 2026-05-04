@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { IoMenu } from "react-icons/io5";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   const userData = authClient.useSession();
@@ -14,6 +15,7 @@ const Navbar = () => {
 
   const handleLogOut = async () => {
     await authClient.signOut();
+    toast.success("LogOut Successful");
   }
 
   return (

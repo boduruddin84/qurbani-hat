@@ -10,9 +10,9 @@ import {
   Input,
   Label,
   TextField,
-  toast,
 } from "@heroui/react";
 import { GrGoogle } from "react-icons/gr";
+import { toast } from "react-toastify";
 
 export default function LogInPage() {
   const onSubmit = async (e) => {
@@ -29,7 +29,9 @@ export default function LogInPage() {
 
     if (error) {
       toast.danger("Email or Password went wrong");
-      alert("Email or Password went wrong");
+    }
+    else {
+      toast.success("Login Successful");
     }
   };
 
@@ -37,6 +39,7 @@ export default function LogInPage() {
     await authClient.signIn.social({
       provider: "google",
     });
+    toast.success("Login Successful");
   };
 
   return (

@@ -10,10 +10,10 @@ import {
   Input,
   Label,
   TextField,
-  toast,
 } from "@heroui/react";
 import { useRouter } from "next/navigation";
 import { GrGoogle } from "react-icons/gr";
+import { toast } from "react-toastify";
 
 export default function SignUpPage() {
   const router = useRouter();
@@ -35,9 +35,9 @@ export default function SignUpPage() {
 
     if (!error) {
       router.push("/login");
+      toast.success("Registration Successful");
     } else {
       toast.danger("Something went wrong");
-      alert("Something went wrong");
     }
   };
 
@@ -45,6 +45,7 @@ export default function SignUpPage() {
     await authClient.signIn.social({
       provider: "google",
     });
+    toast.success("Login Successful");
   };
 
   return (

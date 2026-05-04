@@ -17,7 +17,6 @@ const BookingForm = () => {
     e.preventDefault();
 
     toast.success("Form submitted");
-    alert("Form submitted");
   };
   return (
     <div>
