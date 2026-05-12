@@ -37,7 +37,7 @@ export default function SignUpPage() {
       router.push("/login");
       toast.success("Registration Successful");
     } else {
-      toast.danger("Something went wrong");
+      toast.error("Something went wrong");
     }
   };
 

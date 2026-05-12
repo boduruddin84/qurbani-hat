@@ -28,7 +28,7 @@ export default function LogInPage() {
     });
 
     if (error) {
-      toast.danger("Email or Password went wrong");
+      toast.error("Email or Password went wrong");
     }
     else {
       toast.success("Login Successful");
